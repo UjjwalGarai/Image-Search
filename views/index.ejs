@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Photos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Search a Photo for display</h1>
+    </header>
+    <div class="output">
+        <% if(locals.result) {%>
+                        
+                <img src="<%= result %>" alt="Photos" >
+                <% }  else { %>
+                 <h1>No photos found</h1>
+                 <% } %>
+            
+                <form action="/submit" method="post">
+                    <label for="search">Search A Photo: </label>
+                    <input type="text" name="search" id="search">
+                    <input type="submit" value="Search">
+                </form>
+        
+    </div>
+    
+</body>
+</html>
