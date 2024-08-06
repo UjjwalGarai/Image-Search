@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import axios from "axios";
 import { createClient } from 'pexels';
 
-const client = createClient('yUZuA3PaOAXM04sqidO54maXbxw6nTzFwNBB5nyyejud0UgNOQ3E1pfi');
+const client = createClient('YOUR API ID');
 
 const port = 3000
 
